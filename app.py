@@ -39,7 +39,7 @@ with st.sidebar:
             with st.spinner("Processing image..."):
                 try:
                     response = ollama.chat(
-                        model='llama3.2-vision',   #Use model='llava' if you have 8GB VRAM or less
+                        model='llama3.2-vision',   #Use model='llava' if you have 8GB VRAM or less and follw the Readme instructions to setup LLaVA
                         messages=[{
                             'role': 'user',
                             'content': """Understand the mathematical equation in the provided image and output the corresponding LaTeX code.
